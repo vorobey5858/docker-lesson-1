@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Docker Lesson 1</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #f8fafc;
+      display: grid;
+      min-height: 100vh;
+      place-items: center;
+    }
+
+    .card {
+      width: min(720px, 92vw);
+      padding: 40px;
+      border-radius: 24px;
+      background: rgba(15, 23, 42, 0.88);
+      border: 1px solid rgba(148, 163, 184, 0.25);
+      box-shadow: 0 24px 60px rgba(15, 23, 42, 0.35);
+    }
+
+    .label {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: #14b8a6;
+      color: #042f2e;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    h1 {
+      margin: 0 0 16px;
+      font-size: clamp(32px, 5vw, 48px);
+      line-height: 1.05;
+    }
+
+    p {
+      margin: 0;
+      color: #cbd5e1;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="label">Docker и контейнеризация #1</div>
+    <h1>Это мой первый контейнер</h1>
+    <p>Страница запущена из собственного Docker-образа на базе nginx.</p>
+  </main>
+</body>
+</html>
